@@ -43,8 +43,14 @@ class passgenerator:
                 func1(var)
         except ValueError:
             print("Please only integer! =)")
+        op = open("passwords.txt","r")
+        line = op.readline()
+        for line in op:
+            print(line[2:-3:])
 
-passgenerator()
+
+if __name__ == "__main__":
+    passgenerator()
 
 '''
 Fragast company creating this code on MIT License
