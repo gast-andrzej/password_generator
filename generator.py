@@ -47,5 +47,5 @@ class passgenerator:
 passgenerator()
 
 '''
-Fragast company creating this one (MIT License)
+Fragast company creating this code on MIT License
 '''
