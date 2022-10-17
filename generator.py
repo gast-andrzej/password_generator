@@ -44,15 +44,24 @@ class passgenerator:
         except ValueError:
             print("Please only integer! =)")
         op = open("passwords.txt","r")
-        line = op.readline()
         for line in op:
             print(line[2:-3:])
+        op.close()
 
 def run():
     while True:
         passgenerator()
-        input('\nGoodbye :)')
+        print('\nGoodbye :)')
+
+        x = str(input("you want delete folder with passwords? [Y] yes , [N] no "))
+        if x.upper() == 'Y':
+            b = open("passwords.txt","w")
+            b.write("__")
+            b.close()
+        else:
+            pass
         break
+
 
 
 if __name__ == "__main__":
