@@ -45,3 +45,7 @@ class passgenerator:
             print("Please only integer! =)")
 
 passgenerator()
+
+'''
+Fragast company creating this one (MIT License)
+'''
