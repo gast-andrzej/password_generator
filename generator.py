@@ -48,9 +48,15 @@ class passgenerator:
         for line in op:
             print(line[2:-3:])
 
+def run():
+    while True:
+        passgenerator()
+        input('\nGoodbye :)')
+        break
+
 
 if __name__ == "__main__":
-    passgenerator()
+    run()
 
 '''
 Fragast company creating this code on MIT License
